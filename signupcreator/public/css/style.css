@@ -188,8 +188,7 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea
-{
+textarea {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -208,6 +207,7 @@ textarea {
     width: 100%;
     padding: 12px !important;
     resize: vertical;
+    height: auto;
 }
 
 input[type="email"]:focus,
@@ -242,7 +242,7 @@ button {
 }
 
 button.btn-lg {
-    padding: 20px;
+    padding: 20;
 }
 
 .btn {
@@ -672,16 +672,19 @@ body {
     color: var(--text-color);
 
 }
+
 /*startup form*/
 
-.startup{
+.startup {
     margin-top: 2em;
 }
+
 .create-form {
     background-color: #a55eea;
     margin-top: 5%;
     padding: 20px;
 }
+
 /*----*/
 .panel {
     background-color: var(--white);
@@ -764,13 +767,14 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 1px;
+    cursor: default;
 }
 
 .components li:hover {
     background-color: #eee;
 }
 
-.component-title{
+.component-title {
     font-size: 18px;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -791,25 +795,52 @@ body {
 }
 
 .signup-form-holder {
+    /*
     background-color: var(--white);
     box-shadow: var(--shadow);
+*/
 }
 
-.suf-title {}
+.sf-title-tabs {
 
-.suf-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 20px 0;
+    
+    margin: 0;
+}
+.sf-title-tabs li {
+    list-style: none;
+    
+    
+}
+.sf-title-tabs li a{
+    padding: 20px;
+     background-color: #fff;
+   transition: all 0.2s linear;
+/*    border: 1px solid silver;*/
+}
+.sf-title-tabs li a:hover{
+    background-color: lightgray;
+}
+.m3{
+    
+}
+.sf-content {
     padding: 20px;
     position: relative;
+    background-color: var(--white);
 }
 
-.suf-footer {}
+.sf-footer {}
 
-.section-tabs {
+.section-dots {
 
     padding: 0;
 }
 
-.section-tabs li {
+.section-dots li {
 
     display: inline-flex;
     margin: 5px;
@@ -835,13 +866,19 @@ body {
     position: relative;
     /*    padding: 20px;*/
 }
-.field-title{
+
+.field-title {
+    cursor: default;
+}
+
+.field-tabs-title {
     padding: 20px;
     margin-bottom: 1em;
 }
-fieldset {
 
-    border: none;
+
+fieldset {
+    display: none;
     left: -640px;
     width: 100%;
     padding: 10px 0;
@@ -853,6 +890,7 @@ fieldset {
 
 }
 
+/*
 fieldset.current {
     left: 20px;
     opacity: 1;
@@ -865,11 +903,12 @@ fieldset.prev {
     left: 640px;
 
 }
+*/
 
 
 /*custome nav*/
 
-.side-nav-custom{
+.side-nav-custom {
     max-width: 0;
 
     background: var(--white);
@@ -886,7 +925,7 @@ fieldset.prev {
     -ms-transition: all 0.3s linear;
 }
 
-.side-nav-custom.is-active{
+.side-nav-custom.is-active {
     box-shadow: var(--shadow);
     max-width: 25%;
     -o-transition: all 0.3s linear;
@@ -895,23 +934,26 @@ fieldset.prev {
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
 }
+
 /*
 .email:hover .side-nav-custom{
-
+   
  left: -400px;
 }
 */
-.row-holder{
+.row-holder {
     transition: all 0.2s ease-out;
 }
+
 .row-holder:hover:not(.is-active),
-.row-holder.is-active{
+.row-holder.is-active {
     border: 1px solid;
     border-color: var(--primary-color);
     border-style: dashed;
     padding: 10px;
 }
-.go-back{
+
+.go-back {
     width: 100%;
     margin-bottom: 1em;
     padding: 20px;
@@ -921,7 +963,7 @@ fieldset.prev {
 
 .submit-signupform {
     margin-top: 1em;
-    padding:15px;
+    padding: 15px;
     width: 100%;
     background-color: var(--white);
 }
@@ -969,10 +1011,11 @@ fieldset.prev {
     border-color: #ddd
 }
 
-.hide{
+.hide {
     display: none
 }
-.close{
+
+.close {
     cursor: default;
     position: absolute;
     width: 30px;
@@ -986,9 +1029,23 @@ fieldset.prev {
     border: none;
     transition: 0.2s;
 }
-.close:hover{
+
+.close:hover {
     color: #333;
 }
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #ecf0f1;
+    opacity: 1
+}
+
+.btn:disabled,
+.btn[readonly] {
+    cursor: not-allowed;
+    opacity: 0.5
+}
+
 /*--------------------------------------*/
 a[href] {
     color: var(--text-color);

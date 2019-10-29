@@ -17,35 +17,33 @@ class Index_model
     {
         unset($request['url']);
 
-        $html = $request['html'];
+//        $htmls = $request['html'];
 
-//        $fname = 'sample 1';
-        $fname = $request['fname'];
+        $fname = 'sample 1';
 
-//        $ftitle = 'sample 1';
-        $ftitle = $request['ftitle'];
+        $ftitle = 'sample 1';
 
-//        $html = '';
-//
-//        $html .=' <div class="field-title" align="center">
-//                                <h2>info</h2>
-//                  </div>
-//                  <div class="row row-holder" id="row_2">
-//                      <div class="form-input  ">
-//                          <label id="lb_2">Username</label>
-//                          <input type="text" name="username" class="form-control">
-//                      </div>
-//                  </div><div class="row row-holder" id="row_3">
-//                      <div class="form-input  ">
-//                          <label id="lb_3">Password</label>
-//                          <input type="text" name="password" class="form-control">
-//                      </div>
-//                  </div><div class="row row-holder" id="row_4">
-//                      <div class="form-input  ">
-//                          <label id="lb_4">Account type</label>
-//                          <input type="text" name="type" class="form-control">
-//                      </div>
-//                  </div>';
+        $html = '';
+
+        $html .=' <div class="field-title" align="center">
+                                <h2>info</h2>
+                  </div>
+                  <div class="row row-holder" id="row_2">
+                      <div class="form-input  ">
+                          <label id="lb_2">Username</label>
+                          <input type="text" name="username" class="form-control">
+                      </div>
+                  </div><div class="row row-holder" id="row_3">
+                      <div class="form-input  ">
+                          <label id="lb_3">Password</label>
+                          <input type="text" name="password" class="form-control">
+                      </div>
+                  </div><div class="row row-holder" id="row_4">
+                      <div class="form-input  ">
+                          <label id="lb_4">Account type</label>
+                          <input type="text" name="type" class="form-control">
+                      </div>
+                  </div>';
 
 
         $output = '';

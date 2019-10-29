@@ -1,6 +1,5 @@
 <?php require 'nav.php';
 ?>
-
 <div class="panel-form">
     <div class="signup-form-holder col col-10 offset-1">
         <div class="panel-header flex-center">
