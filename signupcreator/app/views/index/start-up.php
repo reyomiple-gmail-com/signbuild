@@ -18,11 +18,11 @@
 
             <div class="form-group">
                 <label for="" style="color: #fff">Form Title</label>
-                <input type="text" name="ftitle" class="form-control form-title" style="background: #fff">
+                <input type="text" class="form-control form-title" style="background: #fff">
             </div>
             <div class="form-group">
                 <label for="" style="color: #fff">Form Name</label>
-                <input type="text" name="fname" class="form-control form-name" style="background: #fff">
+                <input type="text" class="form-control form-name" style="background: #fff">
             </div>
 
 

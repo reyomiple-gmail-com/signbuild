@@ -92,31 +92,36 @@
             </div>
             <div class="panel-form">
                 <div class="signup-form-holder col col-10 offset-1">
-                    <div class="suf-title">
-                    </div>
-
-                    <div class="suf-body">
+                    <ul class="sf-title-tabs">
+                        
+                    </ul>
+                    <br>
+                    <div class="sf-content temp">
 <!--                        <form class="signup-form" id="signup" action="somewhere" method="POST">-->
-                            <ul class="section-tabs flex-center">
+                            <ul class="section-dots flex-center">
+                            
                             </ul>
 
                             <div class="fieldsets row" id="fieldsets">
 
+                               
                             </div>
+<!--
                             <button type="button" class="btn btn-primary btn-md btn-event" id="prev">Prev</button>
                             <button type="button" class="btn btn-primary btn-md btn-event" id="next">Next</button>
                             <button type="submit" class="btn btn-primary btn-md btn-event" id="submit">Submit</button>
+-->
 <!--                        </form>-->
 
                     </div>
-                    <div class="suf-footer">
+                    <div class="sf-footer">
                     </div>
                 </div>
                 <div class="submit-signupform col ">
                     <div class="row">
 
                         <div class="btn-group flex-end">
-                            <button class="btn btn-primary btn-md">Preview</button>
+                            
                             <button class="btn btn-primary btn-md" type="submit">Save</button>
                         </div>
 
